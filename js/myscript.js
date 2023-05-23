@@ -1,30 +1,30 @@
-// const userWord = prompt('Type a word');
+const userWord = prompt('Type a word');
 
-// if (isPalindrome(userWord)){
-//     console.log('The given word is palindrome');
+if (isPalindrome(userWord)){
+    console.log('The given word is palindrome');
+} else {
+    console.log('The given word is not palindrome');
+}
+
+// const userChoice = prompt('Pick even or odd');
+// const userNumber = parseInt(prompt('Pick a number between 1 and 5'));
+
+// const aINumber = getRandomInt(1,5);
+
+// const sum = userNumber + aINumber;
+
+// let result = "";
+// if ( isEven(sum) ){
+//     result = 'even';
 // } else {
-//     console.log('The given word is not palindrome');
+//     result = 'odd';
 // }
 
-const userChoice = prompt('Pick even or odd');
-const userNumber = parseInt(prompt('Pick a number between 1 and 5'));
-
-const aINumber = getRandomInt(1,5);
-
-const sum = userNumber + aINumber;
-
-let result = "";
-if ( isEven(sum) ){
-    result = 'even';
-} else {
-    result = 'odd';
-}
-
-if ( result === userChoice.toLowerCase()){
-    console.log('Player wins!', sum, aINumber, userNumber);
-} else {
-    console.log('I WON AHAHAHAHAHAHAHAHAHAHAHA!!! POWER TO THE MACHINES!' , sum, aINumber, userNumber);
-}
+// if ( result === userChoice.toLowerCase()){
+//     console.log('Player wins!', sum, aINumber, userNumber);
+// } else {
+//     console.log('I WON AHAHAHAHAHAHAHAHAHAHAHA!!! POWER TO THE MACHINES!' , sum, aINumber, userNumber);
+// }
 
 
 /**
@@ -47,10 +47,12 @@ function isEven(number){
  * @returns true if the string was palindrome, false otherwise.
  */
 function isPalindrome(word){
-    if (word.toLowerCase() == wordReverser(word).toLowerCase()){
-        return true;
+    for (let index = 0; index < word.length / 2; index++) {
+        if ( word[index] !== word[word.length - 1 - index ]){
+            return false;
+        }
     }
-    return false;
+    return true;
 }
 
 /**
