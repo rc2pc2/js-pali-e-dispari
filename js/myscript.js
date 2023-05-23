@@ -6,15 +6,6 @@ if (isPalindrome(userWord)){
     console.log('The given word is not palindrome');
 }
 
-
-
-
-
-
-
-
-
-
 /**
  * Function that checks if a string is palindrome.
  *
