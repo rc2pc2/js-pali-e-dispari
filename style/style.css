@@ -1,0 +1,21 @@
+body{
+    background-color: #001632;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main{
+    background-color: white;
+    color: #001632;
+    /* border-radius: 1rem; */
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.carousel{
+    height: 500px;
+    width: 100%;
+}
